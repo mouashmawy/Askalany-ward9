@@ -1,22 +1,29 @@
 # Mohamed Askalany for Ward 9
 
-Responsive campaign website for Mohamed Askalany, candidate for Kitchener City Council in Ward 9.
+Responsive multi-page campaign website for Mohamed Askalany, candidate for Kitchener City Council in Ward 9.
 
-## Campaign contact
+## Pages
 
-- Email: `mo@voteaskalany.ca`
-- Website: `https://voteaskalany.ca`
+- `index.html` — complete campaign overview and nine strategic pillar titles
+- `meet-mohamed.html` — biography, experience, credentials, and values
+- `priorities-1.html` — photo-led editorial priorities layout
+- `priorities-2.html` — expandable card priorities layout
+- `ward-9.html` — Ward 9 context, jurisdiction guide, and official resources
+- `vote.html` — election date, eligibility, advance voting, and Ward 9 voting locations
+- `get-involved.html` — volunteer, sign request, and campaign update forms
+- `contact.html` — issues, ideas, event invitations, and media inquiries
+- `donate.html` — coming-soon donation page
+- `thank-you.html` — form confirmation page
 
-## Files
+## Shared files
 
-- `index.html` — campaign homepage
-- `styles.css` — responsive design system and mobile breakpoints
-- `script.js` — accessible mobile navigation
-- `thank-you.html` — confirmation page for form submissions
-- `images/mohamed-askalany.png` — candidate portrait
+- `styles.css` — responsive visual system
+- `script.js` — shared navigation, footer, and mobile menu
+- `priorities-data.js` — nine pillars and complete action-plan content used by both priority layouts
+- `images/Askalany Logo.webp` — campaign logo
 
 ## Forms and deployment
 
-Volunteer, contact, and newsletter forms are configured for Netlify Forms. Publish the folder through Netlify, submit one test response to each form, and configure campaign notifications in the Netlify dashboard.
+Volunteer, sign request, newsletter, and contact forms are configured for Netlify Forms. After publishing, submit a test response to each form and configure campaign notifications in Netlify.
 
-Before the final public launch, confirm the campaign's required election advertising authorization, donation link, social accounts, and any additional contact details.
+Campaign contact: `mo@voteaskalany.ca` · `https://voteaskalany.ca`
