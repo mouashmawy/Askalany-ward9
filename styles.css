@@ -1,3 +1,4 @@
+/* Campaign visual system */
 :root {
   --navy: #062d59;
   --navy-deep: #031d3a;
@@ -76,6 +77,7 @@ h4 { font-size: 1.1rem; letter-spacing: -0.015em; }
 .site-nav > a:not(.btn)::after { position: absolute; right: 50%; bottom: 20px; left: 50%; height: 2px; background: var(--teal); content: ""; transition: right 220ms var(--ease), left 220ms var(--ease); }
 .site-nav > a:not(.btn):hover, .site-nav > a[aria-current="page"] { color: var(--teal-dark); }
 .site-nav > a:not(.btn):hover::after, .site-nav > a[aria-current="page"]::after { right: 0; left: 0; }
+.site-nav .btn[aria-current="page"] { color: var(--surface); background: var(--navy-soft); border-color: var(--navy-soft); box-shadow: inset 0 -3px 0 var(--teal); }
 .nav-toggle { display: none; width: 48px; height: 48px; padding: 10px; margin-right: -8px; cursor: pointer; background: transparent; border: 0; }
 .nav-toggle span { display: block; width: 27px; height: 2px; margin: 5px auto; background: var(--navy); transition: transform 220ms var(--ease), opacity 180ms ease; }
 .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -127,6 +129,8 @@ h4 { font-size: 1.1rem; letter-spacing: -0.015em; }
 .page-hero-photo { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #dfe7e7; border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 0 44px 0 0; box-shadow: var(--shadow-lg); }
 .page-hero-photo::after { position: absolute; right: 0; bottom: 0; width: 35%; height: 6px; background: var(--teal); content: ""; }
 .page-hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+body[data-page="ward"] .page-hero-photo img { object-position: center 12%; }
+body[data-page="contact"] .page-hero-photo img { object-position: center 8%; }
 
 .signal-bar { padding: 23px 0; color: var(--surface); background: var(--navy); border-top: 4px solid var(--teal); }
 .signal-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
@@ -266,6 +270,7 @@ fieldset { margin: 0; padding: 0; border: 0; }
 
 .priority-editorial { display: grid; gap: clamp(78px, 10vw, 148px); }
 .priority-story { display: grid; grid-template-columns: minmax(320px, 0.86fr) minmax(0, 1.14fr); gap: clamp(52px, 7vw, 104px); align-items: start; padding-top: 42px; border-top: 1px solid var(--line); scroll-margin-top: 116px; }
+.priority-story:first-child { padding-top: 0; border-top: 0; }
 .priority-story:nth-child(even) .priority-visual { order: 2; }
 .priority-visual { position: sticky; top: 120px; }
 .priority-visual .image-frame { aspect-ratio: 4 / 3; }
