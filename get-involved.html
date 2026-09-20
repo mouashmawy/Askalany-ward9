@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Volunteer with Mohamed Askalany's Ward 9 campaign, request a sign, and sign up for campaign updates.">
+  <meta name="theme-color" content="#062d59"><title>Get Involved | Mohamed Askalany for Ward 9</title>
+  <link rel="icon" type="image/webp" href="images/Askalany Logo.webp"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="involved">
+  <a class="skip-link" href="#main">Skip to content</a><div id="site-header"></div>
+  <main id="main">
+    <section class="page-hero"><div class="container page-hero-split"><div><p class="eyebrow">Get involved</p><h1>Build the Ward 9 campaign with us.</h1><p class="lead">Every conversation, volunteer shift, sign, and new supporter helps carry a stronger Ward 9 voice to City Hall.</p></div><div class="page-hero-photo"><img src="images/group-photos/Askalany_group (9).webp" alt="Mohamed Askalany with community members outdoors"></div></div></section>
+
+    <section class="section section-soft">
+      <div class="container"><div class="section-heading"><div><p class="eyebrow">Choose your way to help</p><h2>There is a place for everyone.</h2></div><p>Join the campaign in the way that fits your time, skills, and comfort level.</p></div>
+        <div class="action-grid">
+          <article class="action-card"><span class="num">01</span><h3>Volunteer</h3><p>Knock on doors, make calls, help at events, deliver literature, support data work, or lend your skills behind the scenes.</p><a class="text-link" href="#volunteer">Join the team →</a></article>
+          <article class="action-card"><span class="num">02</span><h3>Request a sign</h3><p>Show your support with a lawn or window sign and help build visibility across Ward 9.</p><a class="text-link" href="#sign">Request a sign →</a></article>
+          <article class="action-card"><span class="num">03</span><h3>Stay informed</h3><p>Receive campaign updates, events, volunteer opportunities, and important voting information.</p><a class="text-link" href="#updates">Sign up for updates →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="volunteer">
+      <div class="container form-layout"><div><p class="eyebrow">Volunteer</p><h2>Put your energy behind Ward 9.</h2><p class="section-intro">Tell us how you would like to help. The campaign team will follow up with next steps.</p><p>Prefer email? <a href="mailto:mo@voteaskalany.ca"><strong>mo@voteaskalany.ca</strong></a></p></div>
+        <form class="campaign-form" name="volunteer" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="volunteer"><p class="hidden-field"><label>Do not fill this out: <input name="bot-field"></label></p>
+          <div class="field-grid"><label>First name<input type="text" name="first_name" autocomplete="given-name" required></label><label>Last name<input type="text" name="last_name" autocomplete="family-name" required></label></div>
+          <div class="field-grid"><label>Email<input type="email" name="email" autocomplete="email" required></label><label>Phone<input type="tel" name="phone" autocomplete="tel"></label></div>
+          <label>Postal code<input type="text" name="postal_code" autocomplete="postal-code"></label>
+          <fieldset><legend>How would you like to help?</legend><div class="check-grid"><label><input type="checkbox" name="help" value="canvassing"> Canvassing</label><label><input type="checkbox" name="help" value="phone"> Phone or text outreach</label><label><input type="checkbox" name="help" value="events"> Events</label><label><input type="checkbox" name="help" value="literature"> Deliver literature</label><label><input type="checkbox" name="help" value="social"> Social media</label><label><input type="checkbox" name="help" value="admin"> Data or admin</label></div></fieldset>
+          <label>Anything else?<textarea name="message" rows="4" placeholder="Tell us how you would like to help."></textarea></label><button class="btn btn-primary" type="submit">Join the team</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="sign">
+      <div class="container form-layout"><div><p class="eyebrow">Request a sign</p><h2>Show your support in Ward 9.</h2><p class="section-intro">Request a lawn or window sign. The campaign team will contact you to confirm details and delivery.</p></div>
+        <form class="campaign-form" name="sign-request" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="sign-request"><p class="hidden-field"><label>Do not fill this out: <input name="bot-field"></label></p>
+          <label>Name<input type="text" name="name" autocomplete="name" required></label><div class="field-grid"><label>Email<input type="email" name="email" autocomplete="email" required></label><label>Phone<input type="tel" name="phone" autocomplete="tel"></label></div>
+          <label>Address<input type="text" name="address" autocomplete="street-address" required></label><label>Postal code<input type="text" name="postal_code" autocomplete="postal-code" required></label>
+          <label>Sign type<select name="sign_type"><option value="lawn">Lawn sign</option><option value="window">Window sign</option><option value="either">Either works</option></select></label><button class="btn btn-primary" type="submit">Request my sign</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-teal" id="updates">
+      <div class="narrow updates-wrap"><p class="eyebrow">Campaign updates</p><h2>Stay connected to Ward 9.</h2><p>Sign up for campaign news, event invitations, volunteer opportunities, and election reminders.</p>
+        <form class="campaign-form updates-form" name="newsletter" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="newsletter"><p class="hidden-field"><label>Do not fill this out: <input name="bot-field"></label></p><div class="field-grid"><label>First name<input type="text" name="first_name" autocomplete="given-name"></label><label>Email<input type="email" name="email" autocomplete="email" required></label></div><label>Postal code<input type="text" name="postal_code" autocomplete="postal-code"></label><button class="btn btn-primary" type="submit">Keep me updated</button></form>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div><script src="script.js"></script>
+</body>
+</html>
