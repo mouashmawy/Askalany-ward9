@@ -60,8 +60,8 @@ const priorities = [
     title: "Constituent Advocacy & Citizen Engagement",
     shortTitle: "Constituent Advocacy & Neighborhood Engagement",
     summary: "Providing direct, accessible casework support and bringing resident voices straight to the council chamber.",
-    image: "images/group-photos/Askalany_group (3).webp",
-    alt: "Mohamed Askalany speaking with a community member outdoors",
+    image: "images/group-photos/Askalany_group (11).jpg",
+    alt: "Mohamed Askalany connecting with community members",
     points: [
       "Resolving individual Ward 9 resident casework quickly and thoroughly.",
       "Hosting regular town halls and open public consultation sessions.",
@@ -136,8 +136,8 @@ const priorities = [
     title: "Public Safety & Community Wellbeing",
     shortTitle: "Community Safety & Public Wellbeing",
     summary: "Working alongside local emergency services, transit teams, and community groups to keep our streets and school zones safe.",
-    image: "images/group-photos/Askalany_group (4).webp",
-    alt: "Mohamed Askalany with a community leader at an outdoor gathering",
+    image: "images/group-photos/Askalany_group (12).webp",
+    alt: "Mohamed Askalany with community members",
     points: [
       "Overseeing municipal emergency services budgets and operational support.",
       "Supporting collaborative community safety and crime prevention models.",
