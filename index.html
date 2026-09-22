@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="globe.css">
 </head>
 <body data-page="home">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -113,15 +114,26 @@
       </div>
     </section>
 
+    <section class="community home-community" id="community" aria-labelledby="community-heading">
+      <div class="container">
+        <div class="gallery-intro"><p class="eyebrow">Connected by community</p><h2 id="community-heading">People at the heart of our campaign.</h2><p>Neighbours, friends, and shared moments. These connections inspire Mohamed’s commitment to a stronger, more welcoming Ward 9.</p></div>
+        <div class="home-globe-controls"><p id="gallery-hint" class="gallery-hint">Drag to turn the globe. Select a photo to explore the moments we share.</p><button type="button" id="motion-toggle" class="motion-toggle">Pause rotation</button></div>
+        <div id="photo-stage" class="photo-stage" data-view="globe" aria-label="Community photo globe" aria-describedby="gallery-hint"><div class="globe-guide" aria-hidden="true"><span></span><span></span><span></span></div></div>
+        <p class="gallery-count" id="gallery-count" role="status"></p>
+        <noscript><p>Enable JavaScript to explore our community photo globe.</p></noscript>
+        <p class="home-globe-caption">Every conversation matters. Every neighbour belongs.</p>
+      </div>
+    </section>
     <section class="cta-band">
       <div class="container cta-grid">
         <h2>Help carry a strong, strategic voice for Ward 9 to City Hall.</h2>
-        <div class="cta-actions"><a class="btn btn-primary" href="get-involved.html">Get involved</a><a class="btn btn-secondary" href="donate.html">Donate — coming soon</a></div>
+        <div class="cta-actions"><a class="btn btn-primary" href="get-involved.html">Get involved</a><a class="btn btn-secondary" href="donate.html">Donate</a></div>
       </div>
     </section>
   </main>
 
+  <dialog id="photo-dialog" aria-label="Photo viewer"><button type="button" id="close-photo" aria-label="Close photo">✕</button><img id="full-photo" alt=""><div class="viewer-controls"><button type="button" id="previous-photo" aria-label="Previous photo">←</button><p id="photo-caption" aria-live="polite"></p><button type="button" id="next-photo" aria-label="Next photo">→</button></div></dialog>
   <div id="site-footer"></div>
-  <script src="script.js"></script>
+  <script src="script.js"></script><script src="globe-photos.js"></script><script src="globe.js"></script>
 </body>
 </html>

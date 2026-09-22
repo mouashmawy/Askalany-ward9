@@ -477,3 +477,37 @@ fieldset { margin: 0; padding: 0; border: 0; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* Campaign contribution invitation */
+.btn.invest-button { color: #032a42; background: #63d6c8; border: 1px solid #3cbaae; gap: 9px; box-shadow: 0 0 0 4px rgba(12,166,166,.09); white-space: nowrap; }
+.btn.invest-button:hover { background: #8ce5d8; box-shadow: 0 5px 22px rgba(12,166,166,.25); }
+.site-nav .invest-button[aria-current="page"] { color: #032a42; background: #8ce5d8; border-color: #087a7b; box-shadow: 0 0 0 3px rgba(12,166,166,.18); }
+.contribution-grid { display:grid; grid-template-columns:1fr 1.1fr; gap:clamp(32px,6vw,85px); align-items:start; }
+.contribution-grid h2 { margin-bottom:25px; }
+.contribution-card { background:#fff; padding:clamp(24px,4vw,50px); border:1px solid var(--line); border-top:5px solid var(--teal); border-radius:0 0 18px 18px; box-shadow:var(--shadow-sm); min-width:0; }
+.transfer-label { display:block; color:var(--teal-dark); font-size:.7rem; font-weight:800; letter-spacing:.16em; margin-bottom:25px; }
+.transfer-email { font-size:clamp(1.25rem,2.7vw,2.1rem); font-weight:800; color:var(--navy); overflow-wrap:anywhere; margin:15px 0 24px; }
+.copy-status { min-height:1.5em; font-size:.85rem; color:var(--teal-dark); margin:12px 0; }
+.receipt-details { border-top:1px solid var(--line); padding-top:28px; }
+.receipt-details h3 { line-height:1.3; margin-bottom:15px; }
+.receipt-details li { margin-bottom:8px; }
+@media(max-width:900px) { .contribution-grid { grid-template-columns:1fr; } }
+
+.donate-button-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; padding: 6px 0; }
+.donate-button-copy > span { font-size: .94rem; font-weight: 800; }
+.donate-button-copy small { font-size: .62rem; font-weight: 600; line-height: 1.2; }
+
+/* Homepage community globe */
+.home-community { padding: clamp(56px,7vw,90px) 0; }
+.home-community .gallery-intro h2 { max-width: 900px; margin: 18px auto 22px; }
+.home-community .gallery-intro > p:last-child { max-width: 680px; margin-inline: auto; font-size: 1.06rem; }
+.home-globe-controls { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 16px 28px; margin-top: 30px; }
+.home-globe-controls .gallery-hint { margin: 0; }
+.home-globe-caption { margin: 22px 0 0; text-align: center; color: #d1e7ed; }
+@media(max-width:680px) { .home-globe-controls { flex-direction: column; }.home-globe-controls .gallery-hint { min-height: 0; } }
+
+.transfer-help { padding: 8px 0 28px; }
+.transfer-help h3 { margin-bottom: 16px; }
+.transfer-help ol { padding-left: 22px; }
+.transfer-help li { padding-left: 5px; margin-bottom: 12px; }
+.transfer-help strong { overflow-wrap: anywhere; }

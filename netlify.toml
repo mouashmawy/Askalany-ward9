@@ -1,5 +1,6 @@
 [build]
   publish = "."
+  command = "node generate-globe-manifest.js"
 
 [[headers]]
   for = "/*"
@@ -7,3 +8,9 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/priorities-2.html"
+  to = "/priorities-1.html"
+  status = 302
+  force = true

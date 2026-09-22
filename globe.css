@@ -1,0 +1,27 @@
+.community {background:#031d3a;color:#fff;padding:64px 0 80px}
+.gallery-intro{text-align:center}.gallery-intro .eyebrow{justify-content:center;color:#73dad5}.gallery-intro h1{font-size:clamp(2.6rem,6vw,5rem);margin:18px 0}.gallery-intro>p:last-child{color:#b7cbd8}
+.gallery-toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:38px}
+.view-options{display:flex;gap:6px;padding:6px;border:1px solid #ffffff26;border-radius:40px;background:#ffffff06}
+.view-options button,.motion-toggle{border:0;background:transparent;color:#c2d6e2;padding:12px 21px;border-radius:30px;cursor:pointer;font-weight:600}
+.view-options button[aria-pressed=true]{background:#6de0d1;color:#031d3a}.motion-toggle{border:1px solid #ffffff40}
+.gallery-hint{text-align:center;font-size:.85rem;color:#97b3c6;margin:20px 0 0}
+.photo-stage{position:relative;height:640px;overflow:hidden;touch-action:pan-y;isolation:isolate;cursor:grab;background:radial-gradient(ellipse at center,#0c485b80,transparent 67%)}
+.photo-stage:active{cursor:grabbing}.photo-card{position:absolute;left:50%;top:50%;width:160px;height:112px;padding:4px;background:#d9eee9;border:0;border-radius:9px;cursor:pointer;box-shadow:0 12px 30px #0006;will-change:transform}
+.photo-card img{width:100%;height:100%;object-fit:cover;border-radius:5px;pointer-events:none}.photo-card:focus-visible{outline:4px solid #ffd58b;outline-offset:5px}
+.globe-guide{position:absolute;width:490px;height:490px;top:50%;left:50%;transform:translate(-50%,-50%);border:1px solid #73dad52b;border-radius:50%;pointer-events:none}
+.globe-guide span{position:absolute;inset:0;border:1px solid #73dad525;border-radius:50%;transform:scaleX(.4)}.globe-guide span:nth-child(2){transform:scaleY(.4)}.globe-guide span:nth-child(3){transform:rotate(45deg) scaleX(.5)}
+.photo-stage[data-view=orbit] .globe-guide{height:160px;top:62%;transform:translate(-50%,-50%) rotate(-8deg)}
+.photo-stage[data-view=wall]{height:auto;min-height:300px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:30px 0;cursor:auto}
+.photo-stage[data-view=wall] .globe-guide{display:none}.photo-stage[data-view=wall] .photo-card{position:relative;left:auto;top:auto;width:100%;height:auto;aspect-ratio:4/3;transform:none!important;opacity:1!important;z-index:auto!important}.photo-stage[data-view=wall] .photo-card img{object-fit:contain;background:#092c44}
+.gallery-count{text-align:center;color:#8bafc4;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase}
+.button-concepts{border-top:1px solid #ffffff26;padding-top:55px;margin-top:45px}.button-concepts h2{font-size:clamp(1.8rem,3vw,2.7rem);margin-bottom:15px}.button-concepts .eyebrow{color:#73dad5}.button-concepts>p{color:#b7cbd8}
+.concept-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.concept-grid article{padding:25px;border:1px solid #ffffff26;border-radius:12px;display:flex;flex-direction:column;align-items:flex-start;gap:24px}.concept-grid article>span{font-size:.7rem;letter-spacing:.15em;color:#99b3c4}.concept-grid .btn{line-height:1.4;gap:10px}
+.invest-gold{background:#f3d49c;color:#062d59}.invest-outline{border:1px solid #65d2c9;color:#a5f2e7}
+#photo-dialog{width:min(1100px,94vw);max-width:94vw;max-height:94dvh;padding:48px 16px 12px;border:1px solid #ffffff33;border-radius:16px;background:#031d3a;color:white}
+#photo-dialog::backdrop{background:#00101feb;backdrop-filter:blur(9px)}#full-photo{width:100%;height: min(70dvh,750px);object-fit:contain}
+#close-photo{position:absolute;right:12px;top:8px}.viewer-controls{display:flex;align-items:center;justify-content:center;gap:25px}.viewer-controls p{margin:0;color:#c2d6e2}
+#photo-dialog button{border:1px solid #ffffff40;border-radius:50%;width:40px;height:40px;background:#123b53;color:#fff;cursor:pointer}
+.community button:focus-visible,.community a:focus-visible,#photo-dialog button:focus-visible{outline:3px solid #f3d49c;outline-offset:4px}
+@media(max-width:680px){.community{padding-top:40px}.gallery-toolbar{flex-direction:column;margin-top:25px}.view-options{width:100%;justify-content:center}.view-options button{padding:11px 12px;font-size:.8rem}.gallery-hint{min-height:44px}.photo-stage{height:440px}.photo-card{width:108px;height:80px}.globe-guide{width:300px;height:300px}.photo-stage[data-view=wall]{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.concept-grid{grid-template-columns:1fr}.gallery-intro .eyebrow{font-size:.6rem}}
+
+.photo-card img { object-position: center 30%; }

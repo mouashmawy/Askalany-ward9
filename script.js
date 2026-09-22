@@ -28,7 +28,7 @@ if (headerRoot) {
         </button>
         <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
           ${navLinks}
-          <a class="btn btn-sm btn-primary" href="donate.html"${page === 'donate' ? ' aria-current="page"' : ''}>Donate</a>
+          <a class="btn btn-sm invest-button" href="donate.html"${page === 'donate' ? ' aria-current="page"' : ''}><span class="donate-button-copy"><span>Donate</span><small>Invest in Ward 9</small></span><span aria-hidden="true">↗</span></a>
         </nav>
       </div>
     </header>`;
