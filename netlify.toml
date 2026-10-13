@@ -14,3 +14,15 @@
   to = "/priorities-1.html"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/pay-test"
+  to = "/friendly-donation"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/friendly-donation"
+  to = "/friendly-donation.html"
+  status = 200
+  force = true
