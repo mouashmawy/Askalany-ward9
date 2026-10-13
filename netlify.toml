@@ -17,6 +17,12 @@
 
 [[redirects]]
   from = "/pay-test"
-  to = "/pay-test.html"
+  to = "/friendly-donation"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/friendly-donation"
+  to = "/friendly-donation.html"
   status = 200
   force = true

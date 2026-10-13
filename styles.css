@@ -512,56 +512,72 @@ fieldset { margin: 0; padding: 0; border: 0; }
 .transfer-help li { padding-left: 5px; margin-bottom: 12px; }
 .transfer-help strong { overflow-wrap: anywhere; }
 
-/* Unlisted PayPal donation test */
+/* Unlisted PayPal donation page */
 .paypal-test-main { min-height: 72vh; background: var(--navy-deep); }
 .paypal-donation-section { position: relative; display: grid; min-height: calc(100svh - 86px); padding: clamp(22px, 4vh, 44px) 0; align-items: center; isolation: isolate; overflow: hidden; }
 .paypal-background-nine { position: absolute; top: -0.3em; right: -0.02em; z-index: -1; color: rgba(12, 166, 166, 0.12); font-family: Manrope, sans-serif; font-size: clamp(24rem, 45vw, 48rem); font-weight: 800; line-height: 1; pointer-events: none; }
-.paypal-donation-card { width: min(100%, 820px); margin-inline: auto; padding: clamp(30px, 4vw, 48px); background: var(--surface); border-top: 7px solid var(--teal); border-radius: 0 36px 0 0; box-shadow: 0 30px 90px rgba(0, 0, 0, 0.28); }
-.paypal-brand { display: flex; align-items: center; width: fit-content; gap: 9px; margin-bottom: clamp(22px, 3vh, 30px); color: #003087; font-family: Manrope, sans-serif; font-size: 1.25rem; font-weight: 800; letter-spacing: -0.04em; }
-.paypal-brand img { width: 36px; height: 36px; object-fit: contain; }
-.paypal-donation-card .eyebrow { margin-bottom: 11px; }
-.paypal-donation-card h1 { max-width: 12ch; margin-bottom: 12px; color: var(--navy-deep); font-size: clamp(2.3rem, 4.2vw, 3.8rem); }
-.paypal-intro { margin-bottom: clamp(20px, 3vh, 28px); color: var(--muted); font-size: clamp(1rem, 1.35vw, 1.15rem); }
-.paypal-amount-options { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
-.paypal-amount-button { display: flex; min-width: 0; min-height: 72px; padding: 12px 9px; align-items: center; justify-content: center; flex-direction: column; gap: 2px; color: var(--navy); background: var(--mist); border: 1px solid var(--line); border-radius: var(--radius-sm); cursor: pointer; text-align: center; text-decoration: none; transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms var(--ease), box-shadow 180ms ease; }
-.paypal-amount-button span { font-family: Manrope, sans-serif; font-size: 1.22rem; font-weight: 800; line-height: 1.15; }
+.paypal-donation-card { position: relative; width: min(100%, 1060px); margin-inline: auto; padding: clamp(26px, 3.5vw, 42px); background: var(--surface); border-top: 7px solid var(--teal); border-radius: 0 36px 0 0; box-shadow: 0 30px 90px rgba(0, 0, 0, 0.28); }
+.paypal-brand { display: flex; align-items: center; width: fit-content; gap: 8px; margin-bottom: clamp(16px, 2.3vh, 23px); color: #003087; font-family: Manrope, sans-serif; font-size: 1.15rem; font-weight: 800; letter-spacing: -0.04em; }
+.paypal-brand img { width: 32px; height: 32px; object-fit: contain; }
+.paypal-card-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr); gap: clamp(28px, 4vw, 54px); align-items: start; }
+.paypal-choice-panel { min-width: 0; }
+.paypal-donation-card .eyebrow { margin-bottom: 9px; }
+.paypal-donation-card h1 { max-width: 13ch; margin-bottom: 9px; color: var(--navy-deep); font-size: clamp(2rem, 3.4vw, 3.1rem); }
+.paypal-intro { margin-bottom: clamp(15px, 2.3vh, 22px); color: var(--muted); font-size: clamp(0.98rem, 1.2vw, 1.08rem); }
+.paypal-amount-options { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; }
+.paypal-amount-button { display: flex; min-width: 0; min-height: 62px; padding: 9px 7px; align-items: center; justify-content: center; flex-direction: column; gap: 1px; color: var(--navy); background: var(--mist); border: 1px solid var(--line); border-radius: var(--radius-sm); cursor: pointer; text-align: center; text-decoration: none; transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms var(--ease), box-shadow 180ms ease; }
+.paypal-amount-button span { font-family: Manrope, sans-serif; font-size: 1.08rem; font-weight: 800; line-height: 1.15; }
 .paypal-amount-button small { color: var(--muted); font-size: 0.68rem; font-weight: 700; line-height: 1.25; }
-.paypal-amount-button:hover { color: var(--surface); background: #003087; border-color: #003087; box-shadow: 0 10px 24px rgba(0, 48, 135, 0.16); transform: translateY(-2px); }
-.paypal-amount-button:hover small { color: #dce8ff; }
+.paypal-amount-button:hover, .paypal-amount-button[aria-pressed="true"], .paypal-custom-toggle[aria-expanded="true"] { color: var(--surface); background: #003087; border-color: #003087; box-shadow: 0 10px 24px rgba(0, 48, 135, 0.16); transform: translateY(-2px); }
+.paypal-amount-button:hover small, .paypal-amount-button[aria-pressed="true"] small, .paypal-custom-toggle[aria-expanded="true"] small { color: #dce8ff; }
 .paypal-amount-button:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
-.paypal-custom-toggle { font: inherit; }
-.paypal-donation-card.custom-open .paypal-amount-options { grid-template-columns: 1fr; }
-.paypal-donation-card.custom-open .paypal-amount-options a { display: none; }
-.paypal-donation-card.custom-open .paypal-brand,
-.paypal-donation-card.custom-open > .eyebrow { display: none; }
-.paypal-custom-form { padding-top: 20px; margin-top: 20px; border-top: 1px solid var(--line); }
-.paypal-custom-form[hidden] { display: none; }
-.paypal-custom-form > label { display: block; margin-bottom: 10px; color: var(--navy); font-size: 0.88rem; font-weight: 800; }
-.paypal-custom-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; }
-.paypal-amount-field { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; min-height: 54px; padding: 0 16px; background: var(--surface); border: 1px solid #9fb0b8; border-radius: var(--radius-sm); }
+.paypal-custom-toggle, .paypal-preset { font: inherit; }
+.paypal-custom-option { position: relative; grid-column: span 2; min-width: 0; min-height: 62px; }
+.paypal-custom-toggle, .paypal-custom-form { position: absolute; inset: 0; width: 100%; height: 100%; }
+.paypal-custom-toggle[hidden], .paypal-custom-form[hidden] { display: none; }
+.paypal-amount-field { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; height: 100%; min-height: 62px; padding: 0 10px; align-items: center; background: var(--surface); border: 2px solid #003087; border-radius: var(--radius-sm); }
 .paypal-amount-field:focus-within { border-color: var(--teal-dark); box-shadow: 0 0 0 3px rgba(12, 166, 166, 0.16); }
-.paypal-amount-field span, .paypal-amount-field strong { color: var(--muted); font-size: 0.9rem; }
-.paypal-amount-field input { width: 100%; min-width: 0; padding: 11px 8px; color: var(--ink); background: transparent; border: 0; outline: 0; font-weight: 700; }
-.paypal-custom-help, .paypal-custom-status, .paypal-notice { font-size: 0.82rem; line-height: 1.5; }
-.paypal-custom-help { margin: 9px 0 0; color: var(--muted); }
-.paypal-custom-status { min-height: 1.5em; margin: 4px 0 0; color: #a82b32; font-weight: 700; }
-.paypal-notice { margin: 18px 0 0; color: var(--muted); text-align: center; }
+.paypal-amount-field span, .paypal-amount-field strong { color: var(--muted); font-size: 0.7rem; }
+.paypal-amount-field input { width: 100%; min-width: 0; padding: 7px 4px; color: var(--ink); background: transparent; border: 0; outline: 0; font-weight: 800; }
+.paypal-notice { font-size: 0.82rem; line-height: 1.5; }
+.paypal-payment-action { display: flex; margin-top: 13px; align-items: center; justify-content: space-between; gap: 12px; }
+.paypal-payment-action p { margin: 0; color: var(--teal-dark); font-size: 0.82rem; font-weight: 800; }
+.paypal-payment-action .btn { min-height: 46px; padding: 10px 16px; }
+.paypal-payment-action .btn[aria-disabled="true"] { color: #6f7d83; background: #dfe5e7; box-shadow: none; cursor: not-allowed; pointer-events: none; }
+.paypal-notice { margin: 13px 0 0; color: var(--muted); text-align: left; }
+.paypal-receipt-details { padding: clamp(20px, 2.6vw, 30px); background: var(--mist); border-left: 4px solid var(--teal); border-radius: 0 var(--radius-md) var(--radius-md) 0; }
+.paypal-receipt-details h2 { margin-bottom: 12px; color: var(--navy); font-size: clamp(1.15rem, 1.8vw, 1.45rem); line-height: 1.18; letter-spacing: -0.025em; }
+.paypal-receipt-details p, .paypal-receipt-details li { color: var(--muted); font-size: 0.86rem; line-height: 1.5; }
+.paypal-receipt-details p { margin-bottom: 10px; }
+.paypal-receipt-details ul { margin: 0 0 13px; padding-left: 18px; }
+.paypal-receipt-details li { margin-bottom: 3px; }
+.paypal-receipt-details a:not(.text-link) { color: var(--navy); font-weight: 700; }
+.paypal-receipt-details .text-link { font-size: 0.84rem; }
 
 @media (max-width: 680px) {
-  .paypal-donation-section { min-height: calc(100svh - 76px); padding: 16px 0; }
+  .paypal-donation-section { min-height: calc(100svh - 76px); padding: 4px 0; }
   .paypal-background-nine { right: -0.16em; font-size: 30rem; }
-  .paypal-donation-card { padding: 23px 20px 22px; border-radius: 0 28px 0 0; }
-  .paypal-brand { margin-bottom: 18px; }
-  .paypal-brand img { width: 32px; height: 32px; }
-  .paypal-donation-card .eyebrow { margin-bottom: 8px; }
-  .paypal-donation-card h1 { margin-bottom: 9px; font-size: clamp(2.05rem, 10.4vw, 2.65rem); }
-  .paypal-intro { margin-bottom: 16px; font-size: 0.98rem; }
-  .paypal-amount-options { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
-  .paypal-amount-button { min-height: 62px; padding: 9px 8px; }
-  .paypal-custom-toggle { grid-column: 1 / -1; }
-  .paypal-donation-card.custom-open .paypal-custom-toggle { grid-column: auto; }
-  .paypal-custom-form { padding-top: 14px; margin-top: 14px; }
-  .paypal-custom-row { grid-template-columns: 1fr; }
-  .paypal-custom-row .btn { width: 100%; }
-  .paypal-notice { margin-top: 12px; }
+  .paypal-donation-card { padding: 11px 18px 9px; border-radius: 0 25px 0 0; }
+  .paypal-brand { position: absolute; top: 12px; right: 18px; margin: 0; font-size: 0.9rem; }
+  .paypal-brand img { width: 24px; height: 24px; }
+  .paypal-card-grid { grid-template-columns: 1fr; gap: 10px; }
+  .paypal-donation-card .eyebrow { margin-bottom: 5px; font-size: 0.62rem; }
+  .paypal-donation-card h1 { max-width: none; margin-bottom: 6px; font-size: clamp(1.75rem, 8.3vw, 2.15rem); }
+  .paypal-intro { margin-bottom: 10px; font-size: 0.88rem; }
+  .paypal-amount-options { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .paypal-amount-button { min-height: 50px; padding: 6px 5px; }
+  .paypal-amount-button span { font-size: 0.96rem; }
+  .paypal-amount-button small { font-size: 0.59rem; }
+  .paypal-custom-option { grid-column: span 2; min-height: 50px; }
+  .paypal-amount-field { min-height: 50px; }
+  .paypal-payment-action { margin-top: 7px; }
+  .paypal-payment-action .btn { width: 100%; min-height: 40px; padding: 7px 14px; }
+  .paypal-notice { display: none; }
+  .paypal-receipt-details { padding: 10px 15px; border-top: 3px solid var(--teal); border-left: 0; border-radius: 0 0 var(--radius-sm) var(--radius-sm); }
+  .paypal-receipt-details h2 { margin-bottom: 7px; font-size: 1rem; }
+  .paypal-receipt-details p, .paypal-receipt-details li { font-size: 0.74rem; line-height: 1.35; }
+  .paypal-receipt-details p { margin-bottom: 6px; }
+  .paypal-receipt-details ul { display: grid; gap: 1px; margin-bottom: 7px; }
+  .paypal-receipt-details li { margin: 0; }
+  .paypal-receipt-details .text-link { font-size: 0.74rem; }
 }
